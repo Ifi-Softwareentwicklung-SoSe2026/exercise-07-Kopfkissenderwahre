@@ -4,7 +4,7 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ 'feature/*' ]
+    branches: [ main, 'feature/*' ]
   pull_request:
     branches: [ 'feature/*' ]
 
@@ -27,3 +27,5 @@ jobs:
       - name: Build project
         run: dotnet build --no-restore --configuration Release -warnaserror # warnaserror: Treat warnings as errors
 
+      - name: Run tests
+        run: dotnet test --no-build --configuration Release --logger "trx;LogFileName=test_results.trx" --results-directory ./TestResults
