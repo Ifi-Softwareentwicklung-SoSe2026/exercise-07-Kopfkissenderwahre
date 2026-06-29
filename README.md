@@ -15,7 +15,7 @@ tags: [Sommersemester2026, Softwareentwicklung, Übung07]
 
 -->
 
-[![LiaScript Course](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/Ifi-Softwareentwicklung-SoSe2026/exercise_07/refs/heads/main/README.md)
+[![LiaScript Course](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/Ifi-Softwareentwicklung-SoSe2026/exercise_07-Kopfkissenderwahre/refs/heads/main/README.md)
 
 # Aufgabe 07
 
@@ -146,7 +146,7 @@ Badges in GitHub zeigen den Status von Builds, Tests und anderen Metriken an. Si
 Wir nutzen shields.io, um Badges zu generieren. Der Badge für den Status der Tests wird wie folgt eingebunden:
 
 ```markdown
-![CI Status](https://img.shields.io/github/actions/workflow/status/Ifi-Softwareentwicklung-SoSe2026/exercise_07/ci.yml?branch=main&label=CI)
+![CI Status](https://img.shields.io/github/actions/workflow/status/Ifi-Softwareentwicklung-SoSe2026/exercise_07-Kopfkissenderwahre/ci.yml?branch=main&label=CI)
 ```
 
 - Link: https://shields.io/badges/git-hub-actions-workflow-status
