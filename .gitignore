@@ -1,0 +1,23 @@
+# .NET build outputs
+bin/
+obj/
+**/bin/
+**/obj/
+
+# IDE and user-specific files
+.vs/
+*.user
+*.suo
+*.rsuser
+
+# Test and coverage outputs
+TestResults/
+*.trx
+coverage/
+coverage.*
+
+# Generated documentation
+docs/html/
+docs/latex/
+docs/rtf/
+!docs/.gitkeep
