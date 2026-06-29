@@ -4,9 +4,9 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ main, 'feature/*' ]
+    branches: [ "**" ]
   pull_request:
-    branches: [ 'feature/*' ]
+    branches: [ "**" ]
 
 jobs:
   build-and-test:
