@@ -9,7 +9,7 @@ narrator: Deutsch Female
 edit: true
 date: 2026-06-23
 
-
+link:   https://raw.githubusercontent.com/vgoehler/LiaScript_CSS_Provider/refs/heads/main/dist/university.css
 
 tags: [Sommersemester2026, Softwareentwicklung, Übung07]
 
