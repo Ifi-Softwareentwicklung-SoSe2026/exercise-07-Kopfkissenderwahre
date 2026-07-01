@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LogischeAusdrücke/LogischeAusdrücke.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TruthTableTests/TruthTableTests.csproj" />
+  </Folder>
+</Solution>
