@@ -103,6 +103,34 @@ public class UnitTest1
     }
 
     [Fact]
+    public void Program_dispatches_the_truth_table_command()
+    {
+        TextReader originalIn = Console.In;
+        TextWriter originalOut = Console.Out;
+
+        using var input = new StringReader("A AND B\n");
+        using var output = new StringWriter();
+
+        try
+        {
+            Console.SetIn(input);
+            Console.SetOut(output);
+
+            global::Program.Main(["tabelle"]);
+        }
+        finally
+        {
+            Console.SetIn(originalIn);
+            Console.SetOut(originalOut);
+        }
+
+        string text = output.ToString();
+
+        Assert.Contains("Enter a logical expression", text);
+        Assert.Contains("Truth table:", text);
+    }
+
+    [Fact]
     public void Empty_input_is_rejected()
     {
         ArgumentException exception = Assert.Throws<ArgumentException>(() => _inputModule.Parse(string.Empty));
