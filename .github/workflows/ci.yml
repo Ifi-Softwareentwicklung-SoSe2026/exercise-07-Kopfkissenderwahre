@@ -27,6 +27,9 @@ jobs:
       - name: Build project
         run: dotnet build csharp/TruthTable.slnx --no-restore --configuration Release -warnaserror # warnaserror: Treat warnings as errors
 
+      - name: Check formatting
+        run: dotnet format csharp/TruthTable.slnx --no-restore --verify-no-changes --severity warn
+
       - name: Run tests
         run: dotnet test csharp/TruthTable.slnx --no-build --configuration Release --logger "trx;LogFileName=test_results.trx" --results-directory ./TestResults
 
