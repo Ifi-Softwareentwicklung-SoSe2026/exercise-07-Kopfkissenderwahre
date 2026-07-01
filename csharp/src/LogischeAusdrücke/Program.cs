@@ -7,7 +7,7 @@ using TruthTermSimplifier;
 /// </summary>
 public static class Program
 {
-    private const string TABLE = "tabele";
+    private const string TABLE = "tabelle";
     private const string SIMPLIFY = "vereinfachen";
 
     /// <summary>
